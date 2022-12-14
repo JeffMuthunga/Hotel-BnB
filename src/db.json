@@ -1,0 +1,19 @@
+{ "hotels": [
+    {
+    "id":1,
+    "title": "Crown PLaza",
+    "city": "Nairobi",
+    "price": 16990,
+    "description": "Featuring free WiFi, a spa centre and a year-round outdoor pool, Crown Plaza Nairobi Airport offers accommodation in Nairobi. Excellent place to stay near the airport, very friendly professional staff",
+    "image": "https://cf.bstatic.com/xdata/images/hotel/square200/243333654.webp?k=4ff2562ee9207f3ea0f2903d4467e6c89ae2d0db2d46d3f3287ae34a4253a7bc&o="
+},
+{
+    "id":2,
+    "title": "Ibis Styles",
+    "city" : "Nairobi",
+    "price": 8000,
+    "description": "Offering a terrace and views of the city, ibis Styles - Nairobi Westlands is situated in the Westlands district in Nairobi. Guests can enjoy the on-site restaurant.",
+    "image": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/186576516.jpg?k=b31efb6b486fbd01e812ba18d33f62b4f7fa68bce04ada60143aa6460c257718&o=&hp=1"
+}
+]
+}

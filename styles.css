@@ -1,0 +1,51 @@
+.headerDiv {
+    padding: 10px;
+    background:  whitesmoke;
+    text-align: center;
+  }
+  .headerDiv img {
+    width: 120px;
+    float: left;
+  }
+  .headerDiv div {
+    font-family: 'EB Garamond', serif;
+    font-weight: 700;
+    display: block;
+    margin-top: 30px;
+  }
+  .headerDiv div a {
+    padding: 5rem;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  .col {
+    gap: 25rem;
+  }
+  #col1 {
+    background: rgb(84, 241, 84);
+  }
+  #col2 {
+    background: rgb(77, 77, 180);
+  }
+  .card {
+    border-radius: 25px;
+    border: 1px solid black;
+  }
+  .card-header {
+    margin-bottom: 2px;
+  }
+  .card-body {
+    color: blue;
+    font-size: .9rem;
+  }
+  .card-footer {
+    margin-top: 5px;
+  }  
+  .btn {
+    background: orange;
+    float: right;
+  }
+  .btn:hover {
+    background: orangered;
+  }
