@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () =>{
    fetchData().then((data)=> {
     hotels = data.map((element) => {
         const card = cardTemplate.content.cloneNode(true).children[0]
-        const header = card.querySelector(".header")
+        const header = card.querySelector(".header span")
         const body = card.querySelector(".body")
         header.textContent = element.title
         body.textContent = element.city
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () =>{
             "image": urlInput 
         })
     })
-
+    form.reset()
    })
 
 
