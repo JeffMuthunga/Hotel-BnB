@@ -28,12 +28,63 @@
   #col2 {
     background: rgb(77, 77, 180);
   }
-  .card {
+  .search-contents {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+  }
+  .hotel-card {
+    box-shadow: 0 2px 5px 0 black ;
+    display: grid;
+    grid-template-columns: repeat(auto-fill);
+    gap: .25rem;
+    background-color: white;
+    margin-bottom: 5px;
+  }
+  .hide {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  /* .card {
     border-radius: 25px;
-    border: 1px solid black;
+    border: none;
+    box-shadow: 0 2px 5px 1px black;
+    margin-bottom: 10px;
+    overflow: hidden;
+
+  }
+  .card-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fit);
+    margin-top: 10px;
+    
+  }
+  .flex {
+    display: flexbox;
+    gap:5rem;
   }
   .card-header {
     margin-bottom: 2px;
+    overflow: hidden;
+  }
+  .card-header img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0 25px;
   }
   .card-body {
     color: blue;
@@ -48,4 +99,4 @@
   }
   .btn:hover {
     background: orangered;
-  }
+  } */
