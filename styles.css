@@ -63,8 +63,15 @@
     font-size: 30px;
     font-weight: 700;
 }
-
-
+#search {
+  border-radius: 25px;
+  margin-bottom: 20px;
+  height: 50px;
+  
+}
+#search:hover {
+  box-shadow: 0 2px 1px 0 black;
+}
 
 
 
