@@ -72,7 +72,14 @@
 #search:hover {
   box-shadow: 0 2px 1px 0 black;
 }
-
+.search-contents i {
+  position: relative;
+}
+.btn2 {
+  background: orange;
+  font-family: 'Courier New', Courier,;
+  border-radius: 25px;
+}
 
 
 
