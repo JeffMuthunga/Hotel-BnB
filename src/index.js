@@ -61,6 +61,22 @@ document.addEventListener("DOMContentLoaded", () =>{
     const priceInput = e.target["input-price"].value
     const descriptionInput = e.target["input-description"].value
     const urlInput = e.target["input-url"].value
+    
+    fetch(" http://localhost:3000/hotels", {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+        },
+        body: JSON.stringify({
+
+            "title": nameInput,
+            "city" : cityInput,
+            "price": priceInput,
+            "description": descriptionInput,
+            "image": urlInput 
+        })
+    })
 
    })
 
@@ -72,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () =>{
 
 //get data from server
 function fetchData(){
-return fetch("https://api.jsonbin.io/v3/b/6399fda8dfc68e59d5681ece")
+return fetch(" http://localhost:3000/hotels")
 .then(res => res.json())
 .then(data => data)
 }
