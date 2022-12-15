@@ -1,3 +1,9 @@
+.hero-div {
+    background-image: url('https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    height: 1000px;
+    aspect-ratio: 16/9;
+}
+
 .headerDiv {
     padding: 10px;
     background:  whitesmoke;
@@ -23,10 +29,10 @@
     gap: 25rem;
   }
   #col1 {
-    background: rgb(84, 241, 84);
+    
   }
   #col2 {
-    background: rgb(77, 77, 180);
+    
   }
   .search-contents {
     display: flex;
@@ -45,7 +51,19 @@
   .hide {
     display: none;
   }
-
+  .priceDiv {
+    background: green;
+    font-weight: 700;
+    font-size:larger
+  }
+  #add-form {
+    color: yellow;
+  }
+#add-label {
+    color:yellow ;
+    font-size: 30px;
+    font-weight: 700;
+}
 
 
 

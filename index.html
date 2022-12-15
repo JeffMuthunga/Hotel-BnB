@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles.css">    
 </head>
 <body>
+    <div class="hero-div">
     <div  class="headerDiv">
         <img src="./images/Screenshot from 2022-12-14 20-20-35.png" alt="">
         <div>
@@ -37,9 +38,50 @@
             </template>
           </div>
           <div class="col" id="col2">
-            hjj
+            <div class="card" style="width: 18rem;">
+                <img src="./images/Screenshot from 2022-12-14 20-20-35.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="priceDiv">
+                    Kshs <span class="price-span"></span>
+                </div>
+                <div class="card-body">
+                 <button>Book Place</button>
+                </div>
+              </div>
+              <label for="adddata" id="add-label"> ADD A HOTEL</label>
+              <div class="form">
+                <form class="row g-3" id="add-form">
+                    <div class="col-md-6">
+                      <label for="inputEmail4" class="form-label">Hotel Name</label>
+                      <input type="text" class="form-control" id="input-name">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputPassword4" class="form-label">City</label>
+                      <input type="text" class="form-control" id="input-city">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Price</label>
+                        <input type="Price" class="form-control" id="input-price">
+                      </div>
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Description</label>
+                      <input type="text" class="form-control" id="input-description" placeholder="Lorem ipsum">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress2" class="form-label">Image URL</label>
+                      <input type="text" class="form-control" id="input-url" placeholder="URL goes here">
+                    </div>                    
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary" id="submit-btn">Sign in</button>
+                    </div>
+                  </form>
+              </div>
           </div>
           
+    </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

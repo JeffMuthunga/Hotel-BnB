@@ -2,8 +2,16 @@ const template = document.querySelector(".place-here")
 const searchInput = document.getElementById("search")
 const cardTemplate = document.querySelector("[data-template]")
 
+const cardImg = document.querySelector(".card img")
+const cardTitle = document.querySelector(".card-body h5")
+const cardDescription =document.querySelector(".card-text")
+const cardPrice = document.querySelector(".price-span")
 
 let hotels = []
+
+const form = document.getElementById("add-form")
+
+
 
 
 document.addEventListener("DOMContentLoaded", () =>{
@@ -18,11 +26,17 @@ document.addEventListener("DOMContentLoaded", () =>{
         header.textContent = element.title
         body.textContent = element.city
 
-        template.appendChild(card)
+        
         card.addEventListener("click", (e) => {
-            console.log(e)
+            cardImg.src = element.image
+            cardTitle.textContent = element.title
+            cardDescription.textContent = element.description
+            cardPrice.textContent =element.price
+
+
 
         })
+        template.appendChild(card)
         return {destination: element.title, city: element.city, cardElement: card }
         
     })
@@ -39,8 +53,22 @@ document.addEventListener("DOMContentLoaded", () =>{
     
    })
 
+   form.addEventListener("submit", (e) => {
+    e.preventDefault()
+    console.log()
+    const nameInput = e.target["input-name"].value
+    const cityInput = e.target["input-city"].value
+    const priceInput = e.target["input-price"].value
+    const descriptionInput = e.target["input-description"].value
+    const urlInput = e.target["input-url"].value
+
+   })
+
+
 
 })
+
+
 
 //get data from server
 function fetchData(){
@@ -49,32 +77,3 @@ return fetch("https://api.jsonbin.io/v3/b/6399fda8dfc68e59d5681ece")
 .then(data => data)
 }
 
-//creating the template
-// const createTemplate = (destinations) => {
-//     let hotelCard = document.createElement("div")
-//     let cardHeader = document.createElement("div")
-//     let cardBody = document.createElement("div")
-
-//     hotelCard.className = "hotel-card"
-//     cardHeader.className = "header"
-//     cardBody.className = "body"
-
-//     cardHeader.textContent = destinations.title
-//     cardBody.textContent = destinations.price
-
-    
-//     hotelCard.appendChild(cardHeader)
-//     hotelCard.appendChild(cardBody)
-//     template.appendChild(hotelCard)
-//     return { destination: destinations.city, title: destinations.title, cardElement: hotelCard }
-// }
-
-// // display the data in templates
-// function displayData() {
-//     fetchData().then((data) => { 
-//         hotels = data.record.map(element => {
-//             return createTemplate(element)
-            
-//         });
-//     }) 
-// }
