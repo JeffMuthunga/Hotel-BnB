@@ -10,13 +10,15 @@ const cardPrice = document.querySelector(".price-span")
 let hotels = []
 
 const form = document.getElementById("add-form")
+const btn = document.querySelector(".btn2")
 
+let id
+let totalSpots
+let ticketsSold = 0
 
 
 
 document.addEventListener("DOMContentLoaded", () =>{
-
- 
 
    fetchData().then((data)=> {
     hotels = data.map((element) => {
@@ -25,22 +27,18 @@ document.addEventListener("DOMContentLoaded", () =>{
         const body = card.querySelector(".body")
         header.textContent = element.title
         body.textContent = element.city
-
         
         card.addEventListener("click", (e) => {
             cardImg.src = element.image
             cardTitle.textContent = element.title
             cardDescription.textContent = element.description
             cardPrice.textContent =element.price
-
-
-
+            id = element.id
         })
         template.appendChild(card)
         return {destination: element.title, city: element.city, cardElement: card }
         
     })
-   
    })
     
    searchInput.addEventListener("input", (e) => {
@@ -79,6 +77,25 @@ document.addEventListener("DOMContentLoaded", () =>{
     })
     form.reset()
    })
+   
+   btn.addEventListener("click", (e) => {
+        
+
+    fetch(`http://localhost:3000/hotels/${id}`,{
+                method: 'PATCH',
+                headers: {
+                    'Content-Type': 'application/json',
+                    Accept: 'application/json'
+                    },
+                body: JSON.stringify({
+                    "tickets_sold": totalTickets
+                    })
+                })
+
+
+   })
+
+   
 
 
 

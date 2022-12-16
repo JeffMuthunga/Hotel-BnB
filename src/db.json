@@ -3,6 +3,8 @@
     {
       "id": 1,
       "title": "Crown Plaza",
+      "total-spots": 23,
+      "spots-filled": 12,
       "city": "Nairobi",
       "price": 16990,
       "description": "Featuring free WiFi, a spa centre and a year-round outdoor pool, Crown Plaza Nairobi Airport offers accommodation in Nairobi. Excellent place to stay near the airport, very friendly professional staff",
@@ -11,6 +13,8 @@
     {
       "id": 2,
       "title": "Ibis Styles",
+      "total-spots": 17,
+      "spots-filled": 4,
       "city": "Nairobi",
       "price": 8000,
       "description": "Offering a terrace and views of the city, ibis Styles - Nairobi Westlands is situated in the Westlands district in Nairobi. Guests can enjoy the on-site restaurant.",
@@ -19,6 +23,8 @@
     {
       "id": 3,
       "title": "Villa Rosa Kempinski Nairobi",
+      "total-spots": 21,
+      "spots-filled": 17,
       "city": "Nairobi",
       "price": 19000,
       "description": "Stop at Villa Rosa Kempinski to discover the wonders of Nairobi. The hotel offers guests a range of services and amenities designed to provide comfort and convenience. Free Wi-Fi in all rooms, 24-hour security, daily housekeeping, fax machine, gift/souvenir shop are just some of the facilities on offer. Television LCD/plasma screen, carpeting, complimentary instant coffee, complimentary tea, free welcome drink can be found in selected guestrooms.",
@@ -27,6 +33,8 @@
     {
       "id": 4,
       "title": "Kiboko Luxury Camp",
+      "total-spots": 12,
+      "spots-filled": 3,
       "city": "Nakuru",
       "price": 25000,
       "description": "When you stay at Kiboko Luxury Camp in Naivasha, you'll be in a regional park and 6 minutes by foot from Lake Naivasha. This 4-star tentalow is 5.2 mi (8.3 km) from Naivasha District Hospital and 8.4 mi (13.6 km) from Hell's Gate National Park - Elsa Gate.",
@@ -35,6 +43,8 @@
     {
       "id": 5,
       "title": "The Social House",
+      "total-spots": 18,
+      "spots-filled": 7,
       "city": "Mombasa",
       "price": 19275,
       "description": "We're a thoroughly new kind of hotel; so much so that we actually call ourselves a house, as we aim to be a Melting Pot for getting people together and because our way of doing things is perhaps just a little more personable and informal than some. And a touch off-beat: unusual cuisines; unexpected events; untypical meetings; unorthodox interiors",
@@ -43,6 +53,8 @@
     {
       "id": 6,
       "title": "BaoBab Beach Resort & Spa",
+      "total-spots": 17,
+      "spots-filled": 10,
       "city": "Mombasa",
       "price": 13000,
       "description": "Located on the world famous Diani Beach. The resort comprises three luxurious properties The Baobab, The Maridadi and Kole Kole, offering a unique selection of exquisite accommodation and facilities spread across the resort grounds. Guestrooms have been specifically designed to provide paramount comfort and luxury for all our clients. ",
@@ -51,6 +63,8 @@
     {
       "id": 7,
       "title": "Southern Palms Beach Resort",
+      "total-spots": 23,
+      "spots-filled": 14,
       "city": "Malindi",
       "price": 21000,
       "description": "This dramatic hotel with its fantastic pools and beautiful beach is the perfect spot to relax after a safari… or simply visit to relax! The warm and very African feel of the hotel with comfortable rooms, well appointed bathrooms and selection of restaurants offers guests plenty of places to lounge in the sun and almost as many shady spots to enjoy a bit of a breeze and a good book.",
@@ -59,6 +73,8 @@
     {
       "id": 8,
       "title": "Eka Hotel",
+      "total-spots": 17,
+      "spots-filled": 3,
       "city": "Voi",
       "price": 17016,
       "description": "Eka is a contemporary style 4-star hotel that provides all the comfort, convenience and efficiency to the discerning traveler.",
@@ -67,6 +83,8 @@
     {
       "id": 9,
       "title": "Severin Sea Lodge",
+      "total-spots": 21,
+      "spots-filled": 8,
       "city": "Naivasha",
       "price": 15670,
       "description": "Severin Sea Lodge is an oasis of calm and recreation in an extensive palm garden. The hotel is located directly on the shores of the Indian Ocean on Bamburi Beach, approximately 12 kilometres from Mombasa Town and 20 kilometres from the airport.",
@@ -75,6 +93,8 @@
     {
       "id": 10,
       "title": "Palacina Residence & Suites",
+      "total-spots": 15,
+      "spots-filled": 5,
       "city": "Nakuru",
       "price": 15183,
       "description": "For weary travelers who have seen many a hotel room, Palacina is a breath of fresh air. Offering all the luxuries of a five star hotel, with special personalized service, a relaxed atmosphere and great attention to detail.",
@@ -83,6 +103,8 @@
     {
       "id": 11,
       "title": "Sarova Panafric",
+      "total-spots": 30,
+      "spots-filled": 12,
       "city": "Mombasa",
       "price": 16789,
       "description": "Sarova Panafric offers 162 rooms in a range of Superior, Executive, Club, Studio and Themed Suites - all recently refurbished and decorated in a contemporary vibrant African style. Once the watering hole for freedom fighters, spies and foreign correspondents, Flame Tree restaurant is named after the Flame Tree that holds pride of place in the gardens and offers leisurely meals.",
@@ -91,10 +113,20 @@
     {
       "id": 12,
       "title": "TradeMark Hotel",
+      "total-spots": 40,
+      "spots-filled": 19,
       "city": "Nairobi",
       "price": 20035,
       "description": "Trademark Hotel, a spirited clubhouse for the citys growing cultural and diplomatic community designed to reflect the exploding creativity and innovation of the Kenyan capital is now open. The 215-room hotel comes from the makers of Tribe, a pioneering lifestyle property that set a new benchmark for design-driven, high-end hospitality in the city when it opened nearly a decade ago.",
       "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/37/52/56/suite.jpg?w=1200&h=-1&s=1"
+    },
+    {
+      "title": "Kmakis",
+      "city": "Nakuru",
+      "price": "6790",
+      "description": "it is a relly nice place",
+      "image": "https://google.com",
+      "id": 13
     }
   ]
 }
