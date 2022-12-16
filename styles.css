@@ -1,5 +1,5 @@
 .hero-div {
-    background-image: url('https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=1600'); 
+    background-image: url('https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1600'); 
     aspect-ratio: 16/9;
 }
 
@@ -43,10 +43,15 @@
     display: grid;
     grid-template-columns: repeat(auto-fill);
     gap: .25rem;
-    background-color: white;
+    background-color:	 #ccf2ff;
     margin-bottom: 5px;
     margin-top: 5px;
+    font-weight: 700;
+    font-size: large;
+    text-align: center;
+    
   }
+
   .hide {
     display: none;
   }
