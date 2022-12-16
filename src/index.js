@@ -9,7 +9,7 @@ const cardPrice = document.querySelector(".price-span")
 const cardSpots = document.querySelector(".spots-span")
 const h4 = document.querySelector("h4 span")
 
-
+//Initialize an array to store fetched data
 let hotels = []
 
 const form = document.getElementById("add-form")
@@ -20,9 +20,9 @@ let leftSpots=0
 let spots = 0
 
 
-
 document.addEventListener("DOMContentLoaded", () =>{
 
+    //creating the card template
    fetchData().then((data)=> {
     hotels = data.map((element) => {
         const card = cardTemplate.content.cloneNode(true).children[0]
@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () =>{
         header.textContent = element.title
         body.textContent = element.city
         
+    //addEVent LIstener to the card
         card.addEventListener("click", (e) => {
             cardImg.src = element.image
             cardTitle.textContent = element.title
@@ -48,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     })
    })
     
+   //searchbar event Listener
    searchInput.addEventListener("input", (e) => {
     const searchValue = e.target.value
     console.log(hotels)
@@ -58,6 +60,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     
    })
 
+   //form Event Listener
    form.addEventListener("submit", (e) => {
     e.preventDefault()
     console.log()
@@ -68,6 +71,8 @@ document.addEventListener("DOMContentLoaded", () =>{
     const urlInput = e.target["input-url"].value
     const capacityInput = e.target["input-capacity"].value
     
+
+    //POST Method
     fetch(" http://localhost:3000/hotels", {
         method: 'POST',
         headers: {
@@ -88,6 +93,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     form.reset()
    })
    
+   //Btn functionality
    btn.addEventListener("click", (e) => {
     fetchSpecificObject(id).then(data =>{
         if(data["total-spots"] === data["spots-filled"]) {
@@ -115,14 +121,14 @@ document.addEventListener("DOMContentLoaded", () =>{
 
 })
 
-
-
 //get data from server
 function fetchData(){
 return fetch(" http://localhost:3000/hotels")
 .then(res => res.json())
 .then(data => data)
 }
+
+//fetching specific data from the server
 function fetchSpecificObject(id){
     return fetch(`http://localhost:3000/hotels/${id}`)
     .then(res => res.json())

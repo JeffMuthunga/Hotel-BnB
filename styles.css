@@ -118,47 +118,4 @@
 
 
 
-  /* .card {
-    border-radius: 25px;
-    border: none;
-    box-shadow: 0 2px 5px 1px black;
-    margin-bottom: 10px;
-    overflow: hidden;
 
-  }
-  .card-grid {
-    display:grid;
-    grid-template-columns: repeat(auto-fit);
-    margin-top: 10px;
-    
-  }
-  .flex {
-    display: flexbox;
-    gap:5rem;
-  }
-  .card-header {
-    margin-bottom: 2px;
-    overflow: hidden;
-  }
-  .card-header img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 0 25px;
-  }
-  .card-body {
-    color: blue;
-    font-size: .9rem;
-  }
-  .card-footer {
-    margin-top: 5px;
-  }  
-  .btn {
-    background: orange;
-    float: right;
-  }
-  .btn:hover {
-    background: orangered;
-  } */
