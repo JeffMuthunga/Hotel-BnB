@@ -7,6 +7,7 @@ const cardTitle = document.querySelector(".card-body h5")
 const cardDescription =document.querySelector(".card-text")
 const cardPrice = document.querySelector(".price-span")
 const cardSpots = document.querySelector(".spots-span")
+const h4 = document.querySelector("h4 span")
 
 
 let hotels = []
@@ -35,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () =>{
             cardTitle.textContent = element.title
             cardDescription.textContent = element.description
             cardPrice.textContent =element.price
+            h4.textContent = element.city 
             cardSpots.textContent = element["total-spots"] - element["spots-filled"]
             id = element.id
             btn.disabled = false

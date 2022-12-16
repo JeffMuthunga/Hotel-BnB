@@ -58,7 +58,9 @@
   .priceDiv {
     background: green;
     font-weight: 700;
-    font-size:larger
+    font-size: 30px;
+    
+    
   }
   #add-form {
     color: black;
@@ -87,6 +89,26 @@
 }
 .formDiv {
   background: #ccf2ff;
+  margin-bottom: 30px;
+}
+.card {
+  margin-top: 60px;
+  margin-left: 60px;
+  border-radius: 25px;
+  
+}
+.card img {
+  border-radius: 25px;
+}
+.spots-span {
+  font-weight: bolder;
+  font-size: 30px;
+  color: red;
+  margin-left: 10px;
+}
+.search-contents label {
+  color: white;
+  font-size: 30px;
 }
 
 
