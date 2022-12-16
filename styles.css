@@ -61,10 +61,10 @@
     font-size:larger
   }
   #add-form {
-    color: yellow;
+    color: black;
   }
 #add-label {
-    color:yellow ;
+    color:black ;
     font-size: 30px;
     font-weight: 700;
 }
@@ -84,6 +84,9 @@
   background: orange;
   font-family: 'Courier New', Courier,;
   border-radius: 25px;
+}
+.formDiv {
+  background: #ccf2ff;
 }
 
 
