@@ -26,8 +26,8 @@ document.addEventListener("DOMContentLoaded", () =>{
    fetchData().then((data)=> {
     hotels = data.map((element) => {
         const card = cardTemplate.content.cloneNode(true).children[0]
-        const header = card.querySelector(".header span")
-        const body = card.querySelector(".body")
+        const header = card.querySelector(".header")
+        const body = card.querySelector(".body span")
         header.textContent = element.title
         body.textContent = element.city
         
