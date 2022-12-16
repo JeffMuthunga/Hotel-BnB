@@ -6,6 +6,8 @@ const cardImg = document.querySelector(".card img")
 const cardTitle = document.querySelector(".card-body h5")
 const cardDescription =document.querySelector(".card-text")
 const cardPrice = document.querySelector(".price-span")
+const cardSpots = document.querySelector(".spots-span")
+
 
 let hotels = []
 
@@ -13,7 +15,7 @@ const form = document.getElementById("add-form")
 const btn = document.querySelector(".btn2")
 
 let id
-let totalSpots
+let leftSpots=0
 let spots = 0
 
 
@@ -33,7 +35,10 @@ document.addEventListener("DOMContentLoaded", () =>{
             cardTitle.textContent = element.title
             cardDescription.textContent = element.description
             cardPrice.textContent =element.price
+            cardSpots.textContent = element["total-spots"] - element["spots-filled"]
             id = element.id
+            btn.disabled = false
+            btn.textContent = 'Book Spot'
         })
         template.appendChild(card)
         return {destination: element.title, city: element.city, cardElement: card }
@@ -82,27 +87,29 @@ document.addEventListener("DOMContentLoaded", () =>{
    })
    
    btn.addEventListener("click", (e) => {
-        fetchData().then(data =>{
-            data
-        })
-
-    fetch(`http://localhost:3000/hotels/${id}`,{
+    fetchSpecificObject(id).then(data =>{
+        if(data["total-spots"] === data["spots-filled"]) {
+            btn.textContent = "BOOKED OUT"
+            btn.disabled = true
+            cardSpots.textContent = 0
+        } else{
+            leftSpots = data["spots-filled"] + 1
+            fetch(`http://localhost:3000/hotels/${id}`,{
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
                     Accept: 'application/json'
                     },
                 body: JSON.stringify({
-                    "spots-filled": totalSpots
+                    "spots-filled": leftSpots
                     })
                 })
+                cardSpots.textContent = data["total-spots"] - data["spots-filled"]
+        }
 
-
-   })
-
+    })
    
-
-
+   })
 
 })
 
@@ -114,5 +121,10 @@ return fetch(" http://localhost:3000/hotels")
 .then(res => res.json())
 .then(data => data)
 }
+function fetchSpecificObject(id){
+    return fetch(`http://localhost:3000/hotels/${id}`)
+    .then(res => res.json())
+    .then(data => data)
+    }
 
 
