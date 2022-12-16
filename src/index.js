@@ -14,7 +14,7 @@ const btn = document.querySelector(".btn2")
 
 let id
 let totalSpots
-let ticketsSold = 0
+let spots = 0
 
 
 
@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     const priceInput = e.target["input-price"].value
     const descriptionInput = e.target["input-description"].value
     const urlInput = e.target["input-url"].value
+    const capacityInput = e.target["input-capacity"].value
     
     fetch(" http://localhost:3000/hotels", {
         method: 'POST',
@@ -70,6 +71,8 @@ document.addEventListener("DOMContentLoaded", () =>{
 
             "title": nameInput,
             "city" : cityInput,
+            "total-spots": capacityInput,
+            "spots-filled": 0,
             "price": priceInput,
             "description": descriptionInput,
             "image": urlInput 
@@ -79,7 +82,9 @@ document.addEventListener("DOMContentLoaded", () =>{
    })
    
    btn.addEventListener("click", (e) => {
-        
+        fetchData().then(data =>{
+            data
+        })
 
     fetch(`http://localhost:3000/hotels/${id}`,{
                 method: 'PATCH',
@@ -88,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () =>{
                     Accept: 'application/json'
                     },
                 body: JSON.stringify({
-                    "tickets_sold": totalTickets
+                    "spots-filled": totalSpots
                     })
                 })
 
@@ -109,4 +114,5 @@ return fetch(" http://localhost:3000/hotels")
 .then(res => res.json())
 .then(data => data)
 }
+
 

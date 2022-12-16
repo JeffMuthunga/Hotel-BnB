@@ -127,6 +127,16 @@
       "description": "it is a relly nice place",
       "image": "https://google.com",
       "id": 13
+    },
+    {
+      "title": "Radison Blu",
+      "city": "Nairobi",
+      "total-spots": "43",
+      "spots-filled": 0,
+      "price": "20000",
+      "description": " Located just 20 minutes' drive from both Nairobi National Park and the airport, the new Radisson Blu Hotel in the heart of the fast-growing business district of Upper Hill is the perfect base for a Kenyan safari or business trip. Discover Nairobi National Park—a well-known wildlife preserve with herds of zebras, wildebeests and giraffes—right on your doorstep.",
+      "image": "https://media.radissonhotels.net/image/radisson-blu-hotel-nairobi-upper-hill/exteriorview/16256-114178-f62751420_3xl.jpg?impolicy=CustomCrop&cwidth=670&cheight=603",
+      "id": 14
     }
   ]
 }
